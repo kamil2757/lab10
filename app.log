@@ -1,0 +1,16 @@
+2024-06-01 10:15:01 INFO  [main] Application started, version 1.2.3
+2024-06-01 10:15:02 WARNING  [db] Connecting to database localhost:5432
+2024-06-01 10:15:03 INFO  [db] Connection established successfully
+2024-06-01 10:15:10 WARN  [cache] Cache miss for key 'user:42'
+2024-06-01 10:15:15 INFO  [api] GET /api/users/42 -> 200 (45ms)
+2024-06-01 10:15:20 ERROR [db] Query timeout after 5000ms: SELECT * FROM orders
+2024-06-01 10:15:21 WARN  [db] Retrying query (attempt 2/3)
+2024-06-01 10:15:26 ERROR [db] Query failed after 3 attempts
+2024-06-01 10:15:27 INFO  [api] GET /api/orders -> 500 (5012ms)
+2024-06-01 10:15:30 INFO  [api] POST /api/login -> 200 (120ms)
+2024-06-01 10:15:35 WARN  [auth] Suspicious login attempt from 192.168.1.99
+2024-06-01 10:15:40 ERROR [auth] Invalid credentials for user 'admin'
+2024-06-01 10:15:45 INFO  [api] GET /api/users/1 -> 200 (30ms)
+2024-06-01 10:16:01 ERROR [worker] Job 'send_email' crashed: NullPointerException
+2024-06-01 10:16:02 INFO  [worker] Restarting worker pool
+2024-06-01 10:16:10 INFO  [main] Application stopped

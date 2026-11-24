@@ -1,0 +1,4 @@
+2024-06-01 10:15:20 ERROR [db] Query timeout after 5000ms: SELECT * FROM orders
+2024-06-01 10:15:26 ERROR [db] Query failed after 3 attempts
+2024-06-01 10:15:40 ERROR [auth] Invalid credentials for user 'admin'
+2024-06-01 10:16:01 ERROR [worker] Job 'send_email' crashed: NullPointerException
